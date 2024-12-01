@@ -21,6 +21,7 @@
     <micronaut.aot.packageName>com.github.mackatozis.aot.generated</micronaut.aot.packageName>
     <micronaut.runtime>netty</micronaut.runtime>
     <exec.mainClass>com.github.mackatozis.Application</exec.mainClass>
+    <vavr.version>0.10.5</vavr.version>
   </properties>
 
   <repositories>
@@ -40,6 +41,11 @@
       <groupId>io.micronaut.serde</groupId>
       <artifactId>micronaut-serde-jackson</artifactId>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.vavr</groupId>
+      <artifactId>vavr</artifactId>
+      <version>${vavr.version}</version>
     </dependency>
     <dependency>
       <groupId>ch.qos.logback</groupId>
