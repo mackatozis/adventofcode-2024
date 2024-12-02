@@ -1,5 +1,6 @@
 package com.github.mackatozis.day01;
 
+import com.github.mackatozis.util.FileUtil;
 import io.vavr.control.Try;
 
 import java.io.File;
@@ -12,7 +13,7 @@ import java.util.stream.IntStream;
 
 public class SolutionDay01Part1 {
     public static void main(String[] args) {
-        File inputFile = new File(System.getProperty("user.dir") + "/adventofcode-2024/src/main/java/com/github/mackatozis/day01/input.data");
+        File inputFile = FileUtil.resolveInputFile("day01");
         List<int[]> parsedData = parseInputFile(inputFile);
 
         if (parsedData.isEmpty()) {
